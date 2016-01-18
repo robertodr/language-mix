@@ -28,3 +28,12 @@ add_executable(
     pass-string/subc.cpp
     )
 set_property(TARGET pass-string.x PROPERTY LINKER_LANGUAGE Fortran)
+
+# demonstrate how to pass integers between Fortran and C(++)
+add_executable(
+    pass-integer.x
+    pass-integer/main.F90
+    pass-integer/subf.F90
+    pass-integer/subc.cpp
+    )
+set_property(TARGET pass-integer.x PROPERTY LINKER_LANGUAGE Fortran)
